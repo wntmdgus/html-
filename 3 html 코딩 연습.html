@@ -1,0 +1,130 @@
+<head>
+  <title>나만의 정리노트-html</title>
+  <mata charset="utf-8">
+</head>
+<body>
+
+<h1>배운 코드들 정리</h1>
+
+strong 는 강조표시를 하는것이다
+<br>u는 밑줄을 나타나게 한다 </br>
+html에서는 새로운 줄을 표현할때 br 태그를 쓴다
+<br> p태그는 같은 단락일때 쓰는게 좋다
+<br>단점은 단락과 단락의 간격이 고정되어 있지 않기 때문에 시각적으로 자유도가 떨어진다
+<p><h1>css에서 여백을 나타내는 코드</h1>
+style=""안에 여백은 margin (마진)이라고 한다.
+<br>여백을 40px 으로 주고 싶으면 그만큼 안에 넣으면 된다
+<br>ex)style="margin-top:1~100px;"하면 원하는 만큼 여백을 키울수있다
+</p>
+<p><h1>이미지 삽입하는 방법</h1>
+
+  image=img(그림넣는코드)
+  <br>img코드는 src가 같이 와야한다.
+  <br>만약 이미지가 웹이 없다면 프로젝트 파일에 넣어 소스 코드를 얻어서 넣으면 된다
+  <br>ex)img src="hptts:~~~~~~~~~.png"
+  <br>크기 조절은 width="`1~100%" 마음대로 넣어도 된다.
+  <br>alt는 그 그림이 없어졌을때 사진에 대체 사진이라고 하는 그 글자가 들어간다.
+
+
+</p>
+<p><h1>부모,자식 태그(목차 list)</h1>
+태그 간의 관계를 나타내는 표현인 부모(parent),자식(child) 목차가 영어로 list여서 li다
+<br>p태그가 a태그의 부모
+<br>a태그가 p태그의 자식이다
+<br>그런데 a태그는 꼭 p태그의 자식이어야 하는 것은 아니다.
+<br>마찬가지로 p태그가 꼭 a태그의 부모일 필요도 없다 , 필요에 따라 달라질수도 있다.
+<br>2가지의 목록은 다른 목록과 구분할수 있도록 경계가 필요하다
+<br>이때 사용하는 태그가 ul 태그이다.
+<br>ul 태그는 li태그가 없다면 존재 가치가 없다 반대로 마찬가지로 이 둘은 서로 아주 밀접한 관계이다.
+<br>ul은 unordered list의 약자이고 , ol은 ordeved list의 약자이다.
+</p><p>
+ol은 말하자면.. 1억개를 수정해야한다면 하나하나 수정하면 오래걸린다
+<br>앞에 숫자를 지우면 자동으로 숫자가 바뀌는 코드가 ol 코드이다.
+<br>ex)ul
+<br>&nbsp;&nbsp;li 1.css~ /li
+<br>&nbsp;&nbsp;li 2.java~ /li
+<br>&nbsp;&nbsp;&nbsp;/ul
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;을
+<br>ol
+<br>&nbsp;&nbsp;li css~ /li....(숫자지움)
+<br>&nbsp;&nbsp;li java /li....(숫자지움)
+<br>ol 로 하면 자동으로 숫자가 생성된다(넘버링)
+ex)<li>1. HTML</li>
+<li>2. CSS</li>
+<li>3. JavaScript</li>
+
+<li>egoing</li>
+<li>k8805</li>
+<li>sorialgi</li>
+<br>이런경우처럼 목차가 2가지 이상일때는 사용하면 구분이 안간다 그래서 이런 경우를 위해 <br>
+ex)<ul>
+  <li>1. HTML</li>
+  <li>2. CSS</li>
+  <li>3. JavaScript</li>
+</ul>
+<ul>
+  <li>egoing</li>
+  <li>k8805</li>
+  <li>sorialgi</li>
+</ul>
+<br>이런식으로 ul을 ol로 바꾸면서 숫자를 지우면 저절로 넘버링이 된다.
+<br>내가 앞에 목차 첫번째에 다른걸 넣고 싶다 그냥 넣고 저장하고 실행시키면 넣었던 부분에
+<br>숫자가 넣어지며 실행이된다.
+
+<h1>소소한 tip</h1>
+<p>ctrl 누른 상태에서 클릭,클릭 하고 같이 쓰거나 지우면 같이 써진다.
+<br>& nbsp ; 하면 띄어쓰기(공백)이 적용이 된다.
+</p>
+
+<h1>웹 사이트 이름</h1>
+<p>제목을 지정하기 위해서는 title이라느 태그를 사용한다
+  <br>특히 title 태그는 검색엔진이 웹페이지를 분석할 때 가장 중요하게 생각하는
+  <br>태그이기 때문에 title 태그를 쓰지 않으면 정말 큰 손해이다.
+  <br>또 영어가 아닌 문자로 웹페이지를 만들 문자가 깨지는 경우가 있다
+  <br>이럴때  meta charset="utf-8" <> 이런식으로 넣어준다
+  <br>웹브라우저야 이 웹페이지는 utf-8로 만들어졌기 때문에 utp-8로 열어야해 라는 뜻이다.
+  </p>
+
+  <h1>body 태그와 head태그</h1>
+  <p>본문은 body 태그로 본문은 걸명하는 태그는 head 태그를 사용한다.
+<br>body 태그와 head 태그를 감싸는 하나의 태그를 두기로 약속했다. 이것이 head 태그이다.
+<br>또 이 웹페이지가 html로서 만들어졌다는 것을 표현하기 위해서 문서의 시작에 아래와 같은 코드를 추가한다.
+<br>!doctype html<>
+<br>ex)!doctype html<>
+<br>html<>
+<br>head<>
+<br>&nbsp; meta charset="utf-8"<>
+<br>/head<>
+<br>ex)그냥  html 치면 나온다.
+</p>
+
+<h1>링크(Link)</h1>
+<p>a 태그를 사용하면 링크를 만들 수 있다.
+  "a"는 앵커(Anchor)를 의미한다.
+<br><p style="font-size:140%"><strong>hesf</strong></p>
+  a 태그는 기본적으로 href 속성을 가진다. 이동할 페이지 주소를 적어주면 되는거다.
+  <br>ex)a href="http~~~~~~~~네이버"/a<>
+
+<p style="font-size:140%"><strong>target</strong></p>
+a 태그에서 사용할 수있는 또하나의 중요한 속성은 target이다.
+<br>target 속성은 링크가 걸린 페이지를 어떻게 열것인가를 결정하는것이다.
+<br>ex)a href="~~~~~" target="_blank">네이버< /a <>
+<br>위와 같이 target 속성의 값을 _blank로 지정하면 새창에서 네이버 홈페이지가 열린다.
+
+<p style="font-size:140%"><strong>title</strong></p>
+a 태그에서 살펴볼만한 3번쨰 속성은 title 속성이다. 이는 링크의 이름을 지정하는 속성이다.
+<br>ex)a href="~~~~~" target="_blank" title="네이버 홈페이지 열기">네이버< /a <>
+<br>title을 지정해 주면 링크에 마우스를 올렸을떄 타이틀이 표시된다. 아래 링크에 마우스를 올려서 확인해 보면 된다.
+
+<h1>웹 사이트</h1>
+웹 사이트를 만들 때는 순서가 중요하다.
+<br>어떤 순서로 작업을 진행할 지 잘 따져 봐야한다.
+<br>일단 웹페이지 전체를 대표하는 큰 제목을 만들어본다
+<br>그리고 각 부분에 <strong>링크를</strong>걸어서
+<br> <u>다른 페이지와</u> 연결을 시키자.
+<br>항상 시작은 html로 구성하고 title을 알아서 정하고
+<br>body에 a href="~~~~"제목 /a <>로 해서 태그를 걸던
+<br>ol과 li를 넣어서 글자를 넣던 target를 넣어서 하고 title도 넣고
+<br>p style 로 글자도 크기 조절하고 하기.
+
+</body>
